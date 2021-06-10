@@ -39,8 +39,8 @@ def main_handler(event, context):
                         content_list.append(f"【{check_name}】\n{e}")
                         print(f"----------执行失败 【{check_name}】签到 : 错误日志如下:----------\n{e}")
 
-                else:
-                    print(f"----------跳过执行【{check_name}】签到 : 配置文件包含自带的默认配置----------")
+#                else:
+#                    print(f"----------跳过执行【{check_name}】签到 : 配置文件包含自带的默认配置----------")
         else:
             print(f"----------未检测到正确的配置，并跳过执行【{check_name}】签到----------")
     if motto:
